@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Website - SecureGate</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SecureGate.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .welcome-container {
+            text-align: center;
+            margin-top: 100px; /* Adjust as needed */
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+        /* Additional Styles for Decorative Elements */
+        .decorative-line {
+            width: 100px;
+            height: 2px;
+            background-color: #007bff;
+            margin: 20px auto;
+        }
+
+        .decorative-circle {
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Our Website</h1>
+        <div class="decorative-line"></div>
+        <p>We're glad you're here! Explore our services and discover what we have to offer.</p>
+        <form action="@Url.Action("Create", "Tasks")" method="get">
+            <button type="submit" class="btn">Add Tasks</button>
+        </form>
+        <div class="decorative-circle">😊</div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
